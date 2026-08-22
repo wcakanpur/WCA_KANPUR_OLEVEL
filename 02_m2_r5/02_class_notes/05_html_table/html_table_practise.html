@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Colspan and Rowspan Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 30px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Table 1: Complex Student Information with Colspan and Rowspan -->
+    <h2>Table 1: Complex Student Information (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="4">Student Details & Performance</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Roll No</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Contact</th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">101</td>
+            <td rowspan="2">John Doe</td>
+            <td>john@example.com</td>
+            <td>+91-9876543210</td>
+        </tr>
+        <tr>
+            <td colspan="2">Class: 10-A | Section: Science</td>
+        </tr>
+        <tr>
+            <td rowspan="2">102</td>
+            <td rowspan="2">Jane Smith</td>
+            <td>jane@example.com</td>
+            <td>+91-9876543211</td>
+        </tr>
+        <tr>
+            <td colspan="2">Class: 10-B | Section: Commerce</td>
+        </tr>
+    </table>
+
+    <!-- Table 2: Complex Product Inventory with Colspan and Rowspan -->
+    <h2>Table 2: Product Inventory Management (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="6">Warehouse Inventory System</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Category</th>
+            <th rowspan="2">Product</th>
+            <th colspan="2">Stock Details</th>
+            <th colspan="2">Price Details</th>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <th>Location</th>
+            <th>Unit Price</th>
+            <th>Total Value</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Electronics</td>
+            <td>Laptop</td>
+            <td>15</td>
+            <td>A-01</td>
+            <td>₹50,000</td>
+            <td>₹7,50,000</td>
+        </tr>
+        <tr>
+            <td>Mobile Phone</td>
+            <td>45</td>
+            <td>B-02</td>
+            <td>₹25,000</td>
+            <td>₹11,25,000</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>30</td>
+            <td>C-03</td>
+            <td>₹15,000</td>
+            <td>₹4,50,000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Clothing</td>
+            <td>T-Shirt</td>
+            <td>200</td>
+            <td>D-04</td>
+            <td>₹500</td>
+            <td>₹1,00,000</td>
+        </tr>
+        <tr>
+            <td>Jeans</td>
+            <td>150</td>
+            <td>D-05</td>
+            <td>₹1,200</td>
+            <td>₹1,80,000</td>
+        </tr>
+        <tr>
+            <th colspan="3">Total Stock Value</th>
+            <th colspan="3">₹26,05,000</th>
+        </tr>
+    </table>
+
+    <!-- Table 3: Complex Schedule with Colspan and Rowspan -->
+    <h2>Table 3: Weekly Class Schedule (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="6">School Weekly Timetable - Class 10-A</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Period</th>
+            <th colspan="5">Days</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td rowspan="2">9:00-10:00</td>
+            <td colspan="2">Mathematics (Room A101)</td>
+            <td colspan="2">English (Room A102)</td>
+            <td>Science (Room A103)</td>
+        </tr>
+        <tr>
+            <td>Teacher: Mr. Sharma</td>
+            <td>Teacher: Ms. Desai</td>
+            <td colspan="2">Teacher: Dr. Patel</td>
+            <td>Teacher: Mr. Nair</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10:00-11:00</td>
+            <td colspan="2">Science (Room B101)</td>
+            <td rowspan="2">Assembly</td>
+            <td colspan="2">History (Room B102)</td>
+        </tr>
+        <tr>
+            <td>Teacher: Ms. Verma</td>
+            <td>Teacher: Mr. Singh</td>
+            <td colspan="2">Teacher: Mrs. Khan</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="text-align: center; background-color: #FFE5B4;">Lunch Break: 11:00 - 12:00</td>
+        </tr>
+    </table>
+
+    <!-- Table 4: Complex Sales Report with Colspan and Rowspan -->
+    <h2>Table 4: Quarterly Sales Analysis (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="7">Regional Sales Performance Report 2024</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Region</th>
+            <th colspan="3">Q1 Sales</th>
+            <th colspan="3">Q2 Sales</th>
+        </tr>
+        <tr>
+            <th>Month</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Month</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <th>(Jan-Mar)</th>
+            <th>(₹)</th>
+            <th>Target</th>
+            <th>(Apr-Jun)</th>
+            <th>(₹)</th>
+            <th>Target</th>
+        </tr>
+        <tr>
+            <td rowspan="3">North Region</td>
+            <td>January</td>
+            <td>₹10,000</td>
+            <td rowspan="3">✓ Achieved</td>
+            <td>April</td>
+            <td>₹18,000</td>
+            <td rowspan="3">✓ Exceeded</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>₹12,000</td>
+            <td>May</td>
+            <td>₹20,000</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>₹15,000</td>
+            <td>June</td>
+            <td>₹22,000</td>
+        </tr>
+        <tr>
+            <td rowspan="3">South Region</td>
+            <td>January</td>
+            <td>₹9,000</td>
+            <td rowspan="3">△ Pending</td>
+            <td>April</td>
+            <td>₹16,000</td>
+            <td rowspan="3">✓ Achieved</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>₹11,000</td>
+            <td>May</td>
+            <td>₹19,000</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>₹13,000</td>
+            <td>June</td>
+            <td>₹21,000</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total Q1 Sales</th>
+            <th colspan="2">₹70,000</th>
+            <th colspan="2">Total Q2 Sales</th>
+            <th>₹1,16,000</th>
+        </tr>
+    </table>
+
+    <!-- Table 5: Complex Department Structure with Colspan and Rowspan -->
+    <h2>Table 5: Organizational Hierarchy (Colspan + Rowspan)</h2>
+
+           <caption> caption ot table </caption>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="5">Company Department & Employee Structure</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Department</th>
+            <th colspan="2">Employee Information</th>
+            <th rowspan="2">Experience</th>
+            <th rowspan="2">Salary</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td rowspan="4">IT Department</td>
+            <td>Raj Kumar</td>
+            <td>Senior Developer</td>
+            <td>8 years</td>
+            <td>₹80,000</td>
+        </tr>
+        <tr>
+            <td>Priya Singh</td>
+            <td>QA Engineer</td>
+            <td>5 years</td>
+            <td>₹60,000</td>
+        </tr>
+        <tr>
+            <td>Amit Patel</td>
+            <td>Junior Developer</td>
+            <td>2 years</td>
+            <td>₹40,000</td>
+        </tr>
+        <tr>
+            <td>Neha Verma</td>
+            <td>System Admin</td>
+            <td>6 years</td>
+            <td>₹55,000</td>
+        </tr>
+        <tr>
+            <td rowspan="3">HR Department</td>
+            <td>Sanjay Nair</td>
+            <td>HR Manager</td>
+            <td>10 years</td>
+            <td>₹75,000</td>
+        </tr>
+        <tr>
+            <td>Divya Sharma</td>
+            <td>Recruiter</td>
+            <td>4 years</td>
+            <td>₹45,000</td>
+        </tr>
+        <tr>
+            <td>Meera Singh</td>
+            <td>HR Executive</td>
+            <td>3 years</td>
+            <td>₹38,000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Finance Department</td>
+            <td>Vikram Joshi</td>
+            <td>Finance Head</td>
+            <td>12 years</td>
+            <td>₹90,000</td>
+        </tr>
+        <tr>
+            <td>Anita Gupta</td>
+            <td>Accountant</td>
+            <td>6 years</td>
+            <td>₹50,000</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <th colspan="3">Total Employees</th>
+            <th colspan="2">10 Staff Members</th>
+        </tr>
+        </tfoot>
+ 
+    </table>
+ 
+   
+
+    <!-- Table 6: Complex Marks Report Card with Colspan and Rowspan -->
+    <h2>Table 6: Student Marks Report Card (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="8">Annual Examination Results - 2024</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th rowspan="2">Roll No</th>
+            <th colspan="3">Mathematics</th>
+            <th colspan="3">Science</th>
+        </tr>
+        <tr>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Average</th>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Average</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Rahul Sharma</td>
+            <td rowspan="2">101</td>
+            <td>85</td>
+            <td>88</td>
+            <td rowspan="2">86.5</td>
+            <td>90</td>
+            <td>92</td>
+            <td rowspan="2">91</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; background-color: #E8F5E9;">Grade: A</td>
+            <td colspan="2" style="text-align: center; background-color: #E8F5E9;">Grade: A+</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Divya Desai</td>
+            <td rowspan="2">102</td>
+            <td>92</td>
+            <td>95</td>
+            <td rowspan="2">93.5</td>
+            <td>88</td>
+            <td>90</td>
+            <td rowspan="2">89</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; background-color: #E8F5E9;">Grade: A+</td>
+            <td colspan="2" style="text-align: center; background-color: #E8F5E9;">Grade: A</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Arjun Singh</td>
+            <td rowspan="2">103</td>
+            <td>78</td>
+            <td>82</td>
+            <td rowspan="2">80</td>
+            <td>85</td>
+            <td>88</td>
+            <td rowspan="2">86.5</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; background-color: #FFF9C4;">Grade: B+</td>
+            <td colspan="2" style="text-align: center; background-color: #FFF9C4;">Grade: A</td>
+        </tr>
+        <tr>
+            <th colspan="2">Class Average</th>
+            <th colspan="3">86.67</th>
+            <th colspan="3">88.83</th>
+        </tr>
+    </table>
+
+    <!-- Table 7: Complex Invoice with Colspan and Rowspan -->
+    <h2>Table 7: Invoice System (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="5">Invoice #INV-2024-001</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Item No.</th>
+            <th rowspan="2">Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+            <th>(Pcs)</th>
+            <th>(₹)</th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">Notebook (A4)</td>
+            <td>50</td>
+            <td>₹50</td>
+            <td rowspan="2">₹2,500</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #F3E5F5;">GST (5%): ₹125</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Pen (Pack)</td>
+            <td>20</td>
+            <td>₹100</td>
+            <td rowspan="2">₹2,000</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #F3E5F5;">GST (5%): ₹100</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">Pencil (Dozen)</td>
+            <td>100</td>
+            <td>₹10</td>
+            <td rowspan="2">₹1,000</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #F3E5F5;">GST (5%): ₹50</td>
+        </tr>
+        <tr>
+            <th colspan="2">Subtotal</th>
+            <th colspan="2">₹5,500</th>
+            <th>₹5,500</th>
+        </tr>
+        <tr>
+            <th colspan="2">Total GST</th>
+            <th colspan="2">₹275</th>
+            <th>₹275</th>
+        </tr>
+        <tr>
+            <th colspan="3">Grand Total (With GST)</th>
+            <th colspan="2">₹5,775</th>
+        </tr>
+    </table>
+
+    <!-- Table 8: Complex Hotel Booking with Colspan and Rowspan -->
+    <h2>Table 8: Hotel Room Management System (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="6">Grand Hotel - Room Availability & Pricing</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Room Type</th>
+            <th rowspan="3">Capacity</th>
+            <th colspan="2">Pricing</th>
+            <th colspan="2">Availability</th>
+        </tr>
+        <tr>
+            <th>Weekday</th>
+            <th>Weekend</th>
+            <th>Available</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <th>(Mon-Fri)</th>
+            <th>(Sat-Sun)</th>
+            <th>(Rooms)</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td rowspan="3">Single Room</td>
+            <td rowspan="3">1 Person</td>
+            <td>₹2,000</td>
+            <td rowspan="3">₹3,000</td>
+            <td>5</td>
+            <td rowspan="3" style="background-color: #C8E6C9;">Available</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #FFECB3;">Includes: WiFi, AC, TV</td>
+            <td rowspan="2">5 Rooms</td>
+        </tr>
+        <tr>
+            <td colspan="2">Check-in: 2 PM | Check-out: 11 AM</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Double Room</td>
+            <td rowspan="3">2-3 Persons</td>
+            <td>₹3,500</td>
+            <td rowspan="3">₹5,000</td>
+            <td>3</td>
+            <td rowspan="3" style="background-color: #C8E6C9;">Available</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #FFECB3;">Includes: WiFi, AC, TV, Mini Fridge</td>
+            <td rowspan="2">3 Rooms</td>
+        </tr>
+        <tr>
+            <td colspan="2">Check-in: 2 PM | Check-out: 11 AM</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Suite Room</td>
+            <td rowspan="3">4-5 Persons</td>
+            <td>₹6,000</td>
+            <td rowspan="3">₹8,500</td>
+            <td>1</td>
+            <td rowspan="3" style="background-color: #FFCDD2;">Booking Soon</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: #FFECB3;">Includes: WiFi, AC, TV, Fridge, Jacuzzi</td>
+            <td rowspan="2">1 Room</td>
+        </tr>
+        <tr>
+            <td colspan="2">Check-in: 12 PM | Check-out: 12 PM</td>
+        </tr>
+        <tr>
+            <th colspan="2">Total Rooms</th>
+            <th colspan="4">9 Rooms | 8 Available</th>
+        </tr>
+    </table>
+
+    <!-- Table 9: Complex Project Dashboard with Colspan and Rowspan -->
+    <h2>Table 9: Project Development Dashboard (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="6">Software Development Project Status - 2024</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Module Name</th>
+            <th colspan="2">Development Status</th>
+            <th colspan="2">Testing Status</th>
+            <th rowspan="2">Completion %</th>
+        </tr>
+        <tr>
+            <th>Progress</th>
+            <th>Status</th>
+            <th>Progress</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Frontend Module</td>
+            <td rowspan="2">95% Complete</td>
+            <td rowspan="2" style="background-color: #C8E6C9;">✓ Done</td>
+            <td>Unit Tests</td>
+            <td style="background-color: #C8E6C9;">100% ✓</td>
+            <td rowspan="2">97.5%</td>
+        </tr>
+        <tr>
+            <td>E2E Tests</td>
+            <td style="background-color: #C8E6C9;">95% ✓</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Backend Module</td>
+            <td rowspan="2">80% Complete</td>
+            <td rowspan="2" style="background-color: #FFF9C4;">In Progress</td>
+            <td>Unit Tests</td>
+            <td style="background-color: #FFE0B2;">70%</td>
+            <td rowspan="2">75%</td>
+        </tr>
+        <tr>
+            <td>Integration Tests</td>
+            <td style="background-color: #FFE0B2;">70%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Database Module</td>
+            <td rowspan="2">90% Complete</td>
+            <td rowspan="2" style="background-color: #C8E6C9;">✓ Done</td>
+            <td>Schema Tests</td>
+            <td style="background-color: #FFF9C4;">80%</td>
+            <td rowspan="2">85%</td>
+        </tr>
+        <tr>
+            <td>Performance Tests</td>
+            <td style="background-color: #FFF9C4;">85%</td>
+        </tr>
+        <tr>
+            <th colspan="2">Overall Project Progress</th>
+            <th colspan="4">86.67%</th>
+        </tr>
+    </table>
+
+    <!-- Table 10: Most Advanced Mixed Colspan and Rowspan -->
+    <h2>Table 10: Advanced - Sports Tournament Complete Schedule (Colspan + Rowspan)</h2>
+    <table>
+        <tr>
+            <th colspan="7">Cricket Tournament - Group Stage & Results</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Match No.</th>
+            <th colspan="2">Teams</th>
+            <th rowspan="3">Date</th>
+            <th rowspan="3">Venue</th>
+            <th colspan="2">Results</th>
+        </tr>
+        <tr>
+            <th>Team A</th>
+            <th>Team B</th>
+            <th>Winner</th>
+            <th>Margin</th>
+        </tr>
+        <tr>
+            <th colspan="2">(Teams)</th>
+            <th colspan="2"></th>
+        </tr>
+        <tr>
+            <td rowspan="2">1</td>
+            <td rowspan="2">India</td>
+            <td rowspan="2">Pakistan</td>
+            <td>15-Jan-2024</td>
+            <td>Kolkata</td>
+            <td rowspan="2" style="background-color: #C8E6C9;">India</td>
+            <td rowspan="2">By 8 runs</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: #F3E5F5;">Attendance: 45,000 | First Innings: 245/8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Australia</td>
+            <td rowspan="2">England</td>
+            <td>16-Jan-2024</td>
+            <td>Mumbai</td>
+            <td rowspan="2" style="background-color: #C8E6C9;">Australia</td>
+            <td rowspan="2">By 35 runs</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: #F3E5F5;">Attendance: 38,000 | First Innings: 268/7</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td rowspan="2">West Indies</td>
+            <td rowspan="2">South Africa</td>
+            <td>17-Jan-2024</td>
+            <td>Delhi</td>
+            <td rowspan="2" style="background-color: #C8E6C9;">West Indies</td>
+            <td rowspan="2">By 12 runs</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="background-color: #F3E5F5;">Attendance: 52,000 | First Innings: 256/9</td>
+        </tr>
+        <tr>
+            <th colspan="2">Winner Group Stage</th>
+            <th colspan="4">India (3 points)</th>
+            <th>Next: Semi-Finals</th>
+        </tr>
+        <tr>
+            <th colspan="3">Top Scorer (Group Stage)</th>
+            <th colspan="4">Virat Kohli - 287 runs in 3 matches</th>
+        </tr>
+        <tr>
+            <th colspan="3">Best Bowler (Group Stage)</th>
+            <th colspan="4">Jasprit Bumrah - 12 wickets in 3 matches</th>
+        </tr>
+    </table>
+
+</body>
+</html>
