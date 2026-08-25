@@ -3,17 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task 6</title>
+    <title>Form</title>
 </head>
-<body>
-    
+<body bgcolor="red">
+    <h1 align="center">
+        <font color="white" >
+            Sample HTML  Form
+        </font>
+    </h1>
+    <form action="Thank.html">
+        <fieldset>
+            <legend>
+                <h1>
+                    <font color="white"  >
+                        Basic Info
+                    </font>
+                </h1>
+            </legend>
 
-    <h1>Task 6</h1>
-    <p>task 6 work in progress</p>
+            <label for="fname">
+                <font color="White"  size="5">
+                    First Name :
+                </font>
+            </label>
+            <input type="text" name="" id="fname">
+            
+            <label for="lname">
+                <font color="White" size="5">
+                    Last Name :
+                </font>
+            </label>
+            <input type="text" name="" id="lname">
+            <br><br>
 
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemM3bW84cDJuNXg3bTBraDZndnoydWFwYjVtNTUwYml0NGhuZG55aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HBDT4QSTpveU/giphy.gif" alt="" width="200">
+            <label for="em">
+                <font color="white" size="5">
+                    Contact Email :
+                </font>
+            </label>
+            <input type="email" name="" id="em">
+
+            <label for="num">
+                <font color="white" size="5">
+                    Contact Number :
+                </font>
+            </label>
+            <input type="number" name="" id="num"><br><br>
+
+            <label for="db">
+                <font color="white" size="5">
+                    D O B :
+                </font>
+            </label>
+            <input type="date" name="" id="db"><br><br>
+
+            <label for="pass">
+                <font color="white" size="5">
+                    Password:
+                </font>
+            </label>
+            <input type="password" name="" id="pass">
+        </fieldset>
 
 
- 
+        <fieldset>
+            <legend>
+                <h1>
+                    <font color="white">
+                        Gender Info
+                    </font>
+                </h1>
+
+                <label for="M">
+                    <font color="white" size="5">
+                        Male
+                    </font>
+                </label>
+                <input type="radio" name="gender" id="M">
+                <label for="f">
+                    <font color="white" size="5">
+                        Female
+                    </font>
+                </label>
+                <input type="radio" name="gender" id="f">
+
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h1>
+                    <font color="white">
+                        Attach Files 
+                    </font>
+                </h1>
+            </legend>
+                <label for="fl">
+                    <font color="white" size="5">
+                        Insert Your C V :
+                    </font>
+                </label>
+                <input type="file" name="" id="fl" accept=".pdf">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h1>
+                    <font color="white">
+                        Select Transport
+                    </font>
+                </h1>
+            </legend>
+            <input type="checkbox" name="" id="b">
+            <label for="b">
+                <font color="white" size="5">
+                    Bus
+                </font>
+            </label><br><br>
+
+            <input type="checkbox" name="" id="c">
+            <label for="c">
+                <font color="white" size="5">
+                    Car
+                </font>
+            </label><br><br>
+
+            <input type="checkbox" name="" id="bk">
+            <label for="bk">
+                <font color="white" size="5">
+                    Bike
+                </font>
+            </label><br><br>
+
+            <input type="checkbox" name="" id="uk">
+            <label for="uk">
+                <font color="white" size="5">
+                    Aasmaan Main Udke
+                </font>
+            </label><br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <input type="reset" name="" id="">
+        <input type="submit" name="" id="">
+
+    </form>
 </body>
 </html>
