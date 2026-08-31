@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html Frames</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html Frames</title>
+    </head>
 
-
-<frameset cols="*,*,*,*" frameborder="1" noresize scrolling="no">
-    <frame src="https://en.wikipedia.org/wiki/HTML">
-    <frame src="https://en.wikipedia.org/wiki/JavaScript">
-    <frame src="./thank.html">
-    <frame>
-</frameset>
+<body>
+    <h1>iframe</h1>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" width="800"  height="400" frameborder="1">
+    </iframe>
+    <iframe src="https://en.wikipedia.org/wiki/HTML" frameborder="0">
+    </iframe>
+    <iframe src="./a.html" frameborder="1" name="frame1">
+    </iframe>
+</body>
 
 </html>
