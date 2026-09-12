@@ -1,0 +1,107 @@
+/* =====================================================
+   1. TAG NAME SELECTOR
+   ===================================================== */
+
+/* 
+   Selects all <p> elements.
+*/
+
+p {
+    color: rgb(22, 133, 231);
+    background-color: bisque;
+}
+
+
+/* =====================================================
+   2. UNIVERSAL SELECTOR
+   ===================================================== */
+
+/*
+   Selects every element on the page.
+
+   Uncomment this when demonstrating
+   the Universal Selector.
+*/
+
+/*
+* {
+    color:magenta;
+}
+*/
+
+
+/* =====================================================
+   3. CLASS SELECTOR
+   ===================================================== */
+
+
+/* Selects elements having class="student-table-color" */
+
+
+.student-table-color {
+   color: rgb(172, 14, 245);
+}
+
+.student-table-background{
+    background-color: burlywood;
+}
+
+
+/* =====================================================
+   4. ID SELECTOR
+   ===================================================== */
+
+/*
+   Selects the element having id="special-item".
+*/
+
+#special-item {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   5. GROUPING SELECTOR
+   ===================================================== */
+
+/*
+   Selects multiple different elements
+   using a single CSS rule.
+*/
+
+h3,h4,button {
+    color: green;
+}
+
+
+/* =====================================================
+   6. ATTRIBUTE SELECTOR
+   ===================================================== */
+
+/*
+   Selects input elements according to
+   their type attribute.
+*/
+
+input[type] {
+   color: rgb(6, 226, 255);
+}
+
+input[type="email"] {
+    background-color: lightgreen;
+    color: magenta;
+}
+
+a[href^="https"]{
+    color: brown;
+}
+
+a[href$="in"]{
+    color: rgb(201, 3, 250);
+}
+
+a[href*="or"]{
+    color: rgb(82, 163, 1);
+    background-color: antiquewhite;
+}
