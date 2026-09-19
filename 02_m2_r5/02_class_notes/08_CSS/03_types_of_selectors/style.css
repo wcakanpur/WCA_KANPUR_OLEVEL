@@ -105,3 +105,38 @@ a[href*="or"]{
     color: rgb(82, 163, 1);
     background-color: antiquewhite;
 }
+
+
+
+/* descedant selector */
+
+
+ul li{
+   color: #2909df;
+}
+
+h5 label{
+color: greenyellow;
+}
+
+/* child selector */
+
+
+div >  label{
+   color: red;
+}
+
+/* general sibling selector */
+
+div ~ label{
+   color: green;
+
+}
+
+/* adjacent sibling selector */
+
+
+.div + label{
+   color:rgb(240, 10, 106);
+}
+

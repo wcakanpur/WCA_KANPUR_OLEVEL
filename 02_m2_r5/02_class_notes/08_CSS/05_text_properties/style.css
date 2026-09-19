@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Playwrite+BE+WAL+Guides&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne+Tactile&display=swap');
+
+
+.para5{
+    color: #8c0cf5b2;
+}
+
+h1{
+    font-size: 42px;
+    font-weight: 200;
+}
+
+.para1{
+    font-size: 22px;
+}
+
+.para2{
+    font-weight: 900;
+
+}
+
+.para3{
+    font-style: italic;
+}
+
+.para7{
+    text-decoration: underline;
+}
+
+.para8{
+    text-transform:capitalize;
+}
+
+.para10{
+    letter-spacing: 12px;
+}
+
+.para11{
+    word-spacing: 15px;
+   
+}
+
+.para13{
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 35px;
+    background-color: #1d151d;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family:"Rubik" ;
+}
+
+.para4{
+   font-family: "Syne Tactile", system-ui;
+}
+
+.para4 .span1{
+    font-family: "Playwrite BE WAL Guides", cursive;
+}
+
+.para4 .span2{
+    font-family: "Rubik", sans-serif;
+}
+
+.para4 .span3{
+    font-family: "Original Surfer", sans-serif;
+}
+
+.para6{
+    text-align: center;
+}
+
+.para8{
+    text-indent:30px;
+}

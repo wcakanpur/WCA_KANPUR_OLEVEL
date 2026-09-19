@@ -1,131 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
 
-    <title>CSS Selectors</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <body>
+        <h1>Types of CSS Selectors</h1>
 
-<body>
-
-
-    <h1>Types of CSS Selectors</h1>
-
-
-    <!-- =====================================================
+        <!-- =====================================================
          1. TAG NAME SELECTOR
          ===================================================== -->
 
-    <h2>1. Tag Name Selector</h2>
+        <h2>1. Tag Name Selector</h2>
 
-    <p>It selects all occurrences of the targeted HTML tag.</p>
+        <p>It selects all occurrences of the targeted HTML tag.</p>
 
-    <p>Both paragraphs will receive the same style.</p>
+        <p>Both paragraphs will receive the same style.</p>
 
-    <p>This is another paragraph using the same tag.</p>
+        <p>This is another paragraph using the same tag.</p>
 
-
-    <!-- =====================================================
+        <!-- =====================================================
          2. UNIVERSAL SELECTOR
          ===================================================== -->
 
-    <h2>2. Universal Selector</h2>
+        <h2>2. Universal Selector</h2>
 
-    <pre>
+        <pre>
 The universal selector is represented by *
 
 It selects all HTML elements.
     </pre>
 
-
-    <!-- =====================================================
+        <!-- =====================================================
          3. CLASS SELECTOR
          ===================================================== -->
 
-    <h2>3. Class Selector</h2>
+        <h2>3. Class Selector</h2>
 
-    <table border="1">
+        <table border="1">
+            <tr>
+                <th class="student-table-color">Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
 
-        <tr>
-            <th class="student-table-color">Name</th>
-            <th>Course</th>
-            <th>Marks</th>
-        </tr>
+            <tr>
+                <td class="student-table-color">Rahul</td>
+                <td>HTML</td>
+                <td>85</td>
+            </tr>
 
-        <tr>
-            <td class="student-table-color">Rahul</td>
-            <td>HTML</td>
-            <td>85</td>
-        </tr>
+            <tr>
+                <td
+                    class="student-table-color student-table-background">Priya</td>
+                <td>CSS</td>
+                <td>90</td>
+            </tr>
+        </table>
 
-        <tr>
-            <td class="student-table-color student-table-background">Priya</td>
-            <td>CSS</td>
-            <td>90</td>
-        </tr>
-
-    </table>
-
-
-    <!-- =====================================================
+        <!-- =====================================================
          4. ID SELECTOR
          ===================================================== -->
 
-    <h2>4. ID Selector</h2>
+        <h2>4. ID Selector</h2>
 
-    <ul>
+        <ul>
+            <li>HTML</li>
 
-        <li>HTML</li>
+            <li id="special-item">CSS</li>
 
-        <li id="special-item">
-            CSS
-        </li>
+            <li>JavaScript</li>
+        </ul>
 
-        <li>JavaScript</li>
-
-    </ul>
-
-
-    <!-- =====================================================
+        <!-- =====================================================
          5. GROUPING SELECTOR
          ===================================================== -->
 
-    <h2>5. Grouping Selector</h2>
+        <h2>5. Grouping Selector</h2>
 
-    <h3>HTML Heading</h3>
+        <h3>HTML Heading</h3>
 
-<h4>Another Heading</h4>
+        <h4>Another Heading</h4>
 
-    <button>Click Me</button>
+        <button>Click Me</button>
 
-
-    <!-- =====================================================
+        <!-- =====================================================
          6. ATTRIBUTE SELECTOR
          ===================================================== -->
 
-    <h2>6. Attribute Selector</h2>
+        <h2>6. Attribute Selector</h2>
 
-    <form>
+        <form>
+            <input type="text" placeholder="Enter your name" />
 
-        <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email" />
 
-        <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password" />
+        </form>
 
-        <input type="password" placeholder="Enter your password">
+        <a href="https://www.example.com">example1</a>
+        <a href="http://www.example.com">example2</a>
+        <a href="https://www.example.in">example3</a>
+        <a href="https://www.somerandowmword.in">example3</a>
 
-    </form>
+        <!-- =====================================================
+         7. COMBINATOR SELECTOR
+         ===================================================== -->
+
+         <h2>7. combinator selector</h2>
+
+        <!-- descendant selector -->
 
 
-    <a href="https://www.example.com">example1</a>
-    <a href="http://www.example.com">example2</a>
-    <a href="https://www.example.in">example3</a>
-    <a href="https://www.somerandowmword.in">example3</a>
+        <h2>7.1 descendant selector</h2>
+
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2
+
+            <ol>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+            </ol>         
+            </li>
+
+            <li>list item 3</li>
+        </ul>
 
 
-</body>
+    <h5>
+            this is parent elemet 1 
+            <label for=""> label tag 1</label>
+            <label for=""> label tag 2</label>
+    </h5>
 
+            <label for=""> label tag 3</label>
+
+
+        <!-- child selector -->
+
+            <h2>7.2 child selector</h2>
+
+            <div>
+                <label for=""> this is label 1 </label>
+
+                <br> <br>
+
+                <label for=""> this is label 2 </label>
+
+                <section>
+                    <label for=""> this is label 3</label>
+                </section>
+            </div>
+
+            <!-- general sibling selector -->
+
+            <h2>7.3 general sibling selector</h2>
+
+            <div>
+                this is div
+            </div>
+
+            <label for=""> this is label 1 </label>
+            <label for=""> this is label 2 </label>
+            <label for=""> this is label 3 </label>
+
+            <!-- adjacent sibling selector -->
+
+            <h2>7.4 adjacent sibling selector</h2>
+
+
+            <div class="div">
+                this is div
+            </div>
+
+            <label for=""> this is label 1 </label>
+            <label for=""> this is label 2 </label>
+            <label for=""> this is label 3 </label>
+
+    </body>
 </html>
