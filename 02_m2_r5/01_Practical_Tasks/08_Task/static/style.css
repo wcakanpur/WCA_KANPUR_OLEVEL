@@ -1,0 +1,464 @@
+/* =====================================================
+   GENERAL PAGE
+   ===================================================== */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   COMMON DIV
+   ===================================================== */
+
+.box {
+    margin: 30px 50px;
+    padding: 30px;
+    border: 8px solid #222222;
+}
+
+.box h2 {
+    margin:10px 0px; 
+    text-align: center;
+}
+
+
+/* =====================================================
+   1. background
+   ===================================================== */
+
+/*
+   Shorthand property.
+   Multiple background values are written together.
+*/
+
+.background-example {
+
+    background:
+        url("./media/images/bg.jpg")
+        center / cover
+        no-repeat
+        #263238;
+
+    color: white;
+}
+
+
+/* =====================================================
+   2. background-color
+   ===================================================== */
+
+.background-color-example {
+
+    background-color: lightblue;
+
+    color: #102027;
+}
+
+
+/* =====================================================
+   3. background-image
+   ===================================================== */
+
+.background-image-example {
+
+    background-color: #222222;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    color: white;
+}
+
+
+/* =====================================================
+   4. background-repeat
+   ===================================================== */
+
+.background-repeat-example {
+
+    background-color: #dddddd;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: repeat;
+
+    color: #222222;
+}
+
+
+/* =====================================================
+   5. background-position
+   ===================================================== */
+
+.background-position-example {
+
+    background-color: #eeeeee;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center center;
+
+    color: #f0eaea;
+}
+
+
+/* =====================================================
+   6. background-size
+   ===================================================== */
+
+.background-size-example {
+
+    background-color: #222222;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    color: white;
+}
+
+
+/* =====================================================
+   7. background-attachment
+   ===================================================== */
+
+.background-attachment-example {
+
+    height: 350px;
+
+    background-color: #263238;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+
+/* =====================================================
+   9. background-clip
+   ===================================================== */
+
+/*
+   The background is clipped to the padding box and text.
+*/
+
+.background-clip-example {
+
+    padding: 40px;
+
+    background-image: url("./media/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+
+    border: 15px dashed #e65100;
+
+    color: #ebe9e9;
+}
+
+
+.background-clip-text h2{
+    font-size: 64px;
+    font-weight: 900;
+    background-image: url("./media/images/gradient.gif");
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* =====================================================
+   10. background-blend-mode
+   ===================================================== */
+
+/*
+   Two background layers:
+   1. Color
+   2. Image
+
+   The blend mode combines them.
+*/
+
+.background-blend-mode-example {
+
+    background-color: #e65100;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-blend-mode: multiply;
+
+    color: white;
+}
+
+
+/* =====================================================
+   10. BACKGROUND-BLEND-MODE
+   ===================================================== */
+
+.blend-box {
+
+    margin: 30px  50px;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    border: 5px solid #222222;
+
+    background-image:
+        url("./media/images/bg.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.blend-box h3 {
+
+    font-size: 28px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        2px 2px 3px black;
+    text-align: center;
+}
+
+
+/* =====================================================
+   10.1 NORMAL
+   ===================================================== */
+
+.blend-normal {
+
+    background-color: #e63946;
+
+    background-blend-mode: normal;
+}
+
+
+/* =====================================================
+   10.2 MULTIPLY
+   ===================================================== */
+
+.blend-multiply {
+
+    background-color: #e63946;
+
+    background-blend-mode: multiply;
+}
+
+
+/* =====================================================
+   10.3 SCREEN
+   ===================================================== */
+
+.blend-screen {
+
+    background-color: #e63946;
+
+    background-blend-mode: screen;
+}
+
+
+/* =====================================================
+   10.4 OVERLAY
+   ===================================================== */
+
+.blend-overlay {
+
+    background-color: #e63946;
+
+    background-blend-mode: overlay;
+}
+
+
+/* =====================================================
+   10.5 DARKEN
+   ===================================================== */
+
+.blend-darken {
+
+    background-color: #e63946;
+
+    background-blend-mode: darken;
+}
+
+
+/* =====================================================
+   10.6 LIGHTEN
+   ===================================================== */
+
+.blend-lighten {
+
+    background-color: #e63946;
+
+    background-blend-mode: lighten;
+}
+
+
+/* =====================================================
+   10.7 COLOR-DODGE
+   ===================================================== */
+
+.blend-color-dodge {
+
+    background-color: #e63946;
+
+    background-blend-mode: color-dodge;
+}
+
+
+/* =====================================================
+   10.8 COLOR-BURN
+   ===================================================== */
+
+.blend-color-burn {
+
+    background-color: #e63946;
+
+    background-blend-mode: color-burn;
+}
+
+
+/* =====================================================
+   10.9 HARD-LIGHT
+   ===================================================== */
+
+.blend-hard-light {
+
+    background-color: #e63946;
+
+    background-blend-mode: hard-light;
+}
+
+
+/* =====================================================
+   10.10 SOFT-LIGHT
+   ===================================================== */
+
+.blend-soft-light {
+
+    background-color: #e63946;
+
+    background-blend-mode: soft-light;
+}
+
+
+/* =====================================================
+   10.11 DIFFERENCE
+   ===================================================== */
+
+.blend-difference {
+
+    background-color: #e63946;
+
+    background-blend-mode: difference;
+}
+
+
+/* =====================================================
+   10.12 EXCLUSION
+   ===================================================== */
+
+.blend-exclusion {
+
+    background-color: #e63946;
+
+    background-blend-mode: exclusion;
+}
+
+
+/* =====================================================
+   10.13 HUE
+   ===================================================== */
+
+.blend-hue {
+
+    background-color: #e63946;
+
+    background-blend-mode: hue;
+}
+
+
+/* =====================================================
+   10.14 SATURATION
+   ===================================================== */
+
+.blend-saturation {
+
+    background-color: #e63946;
+
+    background-blend-mode: saturation;
+}
+
+
+/* =====================================================
+   10.15 COLOR
+   ===================================================== */
+
+.blend-color {
+
+    background-color: #e63946;
+
+    background-blend-mode: color;
+}
+
+
+/* =====================================================
+   10.16 LUMINOSITY
+   ===================================================== */
+
+.blend-luminosity {
+
+    background-color: #e63946;
+
+    background-blend-mode: luminosity;
+}

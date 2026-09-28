@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Background Properties</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+
+    <h1>CSS Background Properties</h1>
+
+    <!-- 1. background -->
+
+    <div class="box background-example">
+
+        <h2>1. background</h2>
+
+        <p>
+            The background property is a shorthand property used to
+            define multiple background properties in a single declaration.
+        </p>
+
+        <p>
+            It can be used to specify background color, image,
+            position, size, repeat and other background settings.
+        </p>
+
+    </div>
+
+
+    <!-- 2. background-color -->
+
+    <div class="box background-color-example">
+
+        <h2>2. background-color</h2>
+
+        <p>
+            The background-color property specifies the background
+            color of an element.
+        </p>
+
+        <p>
+            It can accept color values such as names, hexadecimal
+            values, RGB values and other valid CSS color formats.
+        </p>
+
+    </div>
+
+
+    <!-- 3. background-image -->
+
+    <div class="box background-image-example">
+
+        <h2>3. background-image</h2>
+
+        <p>
+            The background-image property is used to place an image
+            behind the content of an element.
+        </p>
+
+        <p>
+            A background image can be specified using the url()
+            function.
+        </p>
+
+    </div>
+
+
+    <!-- 4. background-repeat -->
+
+    <div class="box background-repeat-example">
+
+        <h2>4. background-repeat</h2>
+
+        <p>
+            The background-repeat property controls whether a
+            background image should repeat horizontally, vertically,
+            in both directions or not repeat.
+        </p>
+
+        <p>
+            Common values include repeat, repeat-x, repeat-y and no-repeat.
+        </p>
+
+    </div>
+
+
+    <!-- 5. background-position -->
+
+    <div class="box background-position-example">
+
+        <h2>5. background-position</h2>
+
+        <p>
+            The background-position property specifies the starting
+            position of a background image inside an element.
+        </p>
+
+        <p>
+            Common positions include top, bottom, left, right and center.
+        </p>
+
+    </div>
+
+
+    <!-- 6. background-size -->
+
+    <div class="box background-size-example">
+
+        <h2>6. background-size</h2>
+
+        <p>
+            The background-size property controls the size of the
+            background image.
+        </p>
+
+        <p>
+            Values such as cover, contain and specific dimensions
+            can be used to control the image size.
+        </p>
+
+    </div>
+
+
+    <!-- 7. background-attachment -->
+
+    <div class="box background-attachment-example">
+
+        <h2>7. background-attachment</h2>
+
+        <p>
+            The background-attachment property determines whether
+            the background image scrolls with the element or remains
+            fixed relative to the viewport.
+        </p>
+
+        <p>
+            Common values include scroll and fixed.
+        </p>
+
+    </div>
+
+
+    <!-- 9. background-clip -->
+
+    <div class="box background-clip-example">
+
+        <h2>8. background-clip</h2>
+
+        <p>
+            The background-clip property specifies the area within
+            which the background is painted.
+        </p>
+
+        <p>
+            Common values include border-box, padding-box and
+            content-box.
+        </p>
+
+
+    </div>
+
+    <div class="box background-clip-text">
+        <h2>8.1 background clip text</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus ducimus consequuntur vel
+            officia! Magni, aspernatur enim debitis nam maxime, natus, officia vitae repellendus excepturi rem animi
+            error perferendis tempora pariatur deserunt hic beatae!
+        </p>
+    </div>
+
+
+
+    <!-- 10. background-blend-mode -->
+
+    <div class="box background-blend-mode-example">
+
+        <h2>9. background-blend-mode</h2>
+
+        <p>
+            The background-blend-mode property defines how multiple
+            background layers blend with each other.
+        </p>
+
+        <p>
+            Different blend modes can create different visual effects
+            between a background image and background color.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+     10. BACKGROUND-BLEND-MODE
+     ===================================================== -->
+
+
+<!-- 10.1 normal -->
+
+<div class="blend-box blend-normal">
+
+    <h3>9.1 normal</h3>
+
+    <p>
+        The normal value displays the background layers without
+        blending them with each other.
+    </p>
+
+</div>
+
+
+<!-- 10.2 multiply -->
+
+<div class="blend-box blend-multiply">
+
+    <h3>9.2 multiply</h3>
+
+    <p>
+        The multiply value combines the colors of the background
+        layers and generally produces a darker result.
+    </p>
+
+</div>
+
+
+<!-- 10.3 screen -->
+
+<div class="blend-box blend-screen">
+
+    <h3>9.3 screen</h3>
+
+    <p>
+        The screen value generally produces a lighter result by
+        blending the background layers.
+    </p>
+
+</div>
+
+
+<!-- 10.4 overlay -->
+
+<div class="blend-box blend-overlay">
+
+    <h3>9.4 overlay</h3>
+
+    <p>
+        The overlay value combines the effects of multiply and
+        screen depending on the underlying colors.
+    </p>
+
+</div>
+
+
+<!-- 10.5 darken -->
+
+<div class="blend-box blend-darken">
+
+    <h3>9.5 darken</h3>
+
+    <p>
+        The darken value keeps the darker color from the
+        corresponding background layers.
+    </p>
+
+</div>
+
+
+<!-- 10.6 lighten -->
+
+<div class="blend-box blend-lighten">
+
+    <h3>9.6 lighten</h3>
+
+    <p>
+        The lighten value keeps the lighter color from the
+        corresponding background layers.
+    </p>
+
+</div>
+
+
+<!-- 10.7 color-dodge -->
+
+<div class="blend-box blend-color-dodge">
+
+    <h3>9.7 color-dodge</h3>
+
+    <p>
+        The color-dodge value increases brightness and can
+        create a strong glowing effect.
+    </p>
+
+</div>
+
+
+<!-- 10.8 color-burn -->
+
+<div class="blend-box blend-color-burn">
+
+    <h3>9.8 color-burn</h3>
+
+    <p>
+        The color-burn value generally produces a darker and
+        more intense color effect.
+    </p>
+
+</div>
+
+
+<!-- 10.9 hard-light -->
+
+<div class="blend-box blend-hard-light">
+
+    <h3>9.9 hard-light</h3>
+
+    <p>
+        The hard-light value creates a strong contrast between
+        the background layers.
+    </p>
+
+</div>
+
+
+<!-- 10.10 soft-light -->
+
+<div class="blend-box blend-soft-light">
+
+    <h3>9.10 soft-light</h3>
+
+    <p>
+        The soft-light value produces a softer contrast effect
+        compared with hard-light.
+    </p>
+
+</div>
+
+
+<!-- 10.11 difference -->
+
+<div class="blend-box blend-difference">
+
+    <h3>9.11 difference</h3>
+
+    <p>
+        The difference value creates a color effect based on
+        the difference between the background layers.
+    </p>
+
+</div>
+
+
+<!-- 10.12 exclusion -->
+
+<div class="blend-box blend-exclusion">
+
+    <h3>9.12 exclusion</h3>
+
+    <p>
+        The exclusion value creates an effect similar to
+        difference but with lower contrast.
+    </p>
+
+</div>
+
+
+<!-- 10.13 hue -->
+
+<div class="blend-box blend-hue">
+
+    <h3>9.13 hue</h3>
+
+    <p>
+        The hue value uses the hue of the blending layer while
+        preserving the saturation and luminosity of the base layer.
+    </p>
+
+</div>
+
+
+<!-- 10.14 saturation -->
+
+<div class="blend-box blend-saturation">
+
+    <h3>9.14 saturation</h3>
+
+    <p>
+        The saturation value uses the saturation of the blending
+        layer while preserving other color characteristics.
+    </p>
+
+</div>
+
+
+<!-- 10.15 color -->
+
+<div class="blend-box blend-color">
+
+    <h3>9.15 color</h3>
+
+    <p>
+        The color value applies the hue and saturation of the
+        blending layer while preserving luminosity.
+    </p>
+
+</div>
+
+
+<!-- 10.16 luminosity -->
+
+<div class="blend-box blend-luminosity">
+
+    <h3>9.16 luminosity</h3>
+
+    <p>
+        The luminosity value uses the luminosity of the blending
+        layer while preserving the hue and saturation of the base.
+    </p>
+
+</div>
+
+</body>
+
+</html>
