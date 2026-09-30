@@ -1,0 +1,244 @@
+/* =====================================================
+   GENERAL PAGE
+   ===================================================== */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+
+    background-color: #eeeeee;
+
+    color: #222222;
+
+    font-family: Arial, sans-serif;
+}
+
+
+body > h1 {
+
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+    
+    text-shadow: 3px 3px 8px rgb(48, 47, 47);
+}
+
+
+/* =====================================================
+   COMMON TEXT BOX
+   ===================================================== */
+
+.text-box {
+
+    margin: 30px 20px;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 3px solid #333333;
+
+    border-radius: 10px;
+}
+
+
+.text-box h2 {
+
+    margin-top: 0;
+
+    color: #444444;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 24px;
+
+    text-align: left;
+}
+
+
+.text-box p {
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   2.1 FONT
+   ===================================================== */
+
+/*
+   font is a shorthand property.
+*/
+
+.font-example .sample {
+
+    font:
+        italic bold 28px Georgia;
+
+}
+
+
+/* =====================================================
+   2.2 FONT-FAMILY
+   ===================================================== */
+
+.font-family-example .sample {
+
+  font-family: "Eater", serif;
+
+}
+
+
+/* =====================================================
+   2.3 FONT-SIZE
+   ===================================================== */
+
+.font-size-example .sample {
+
+    font-size: 32px;
+
+}
+
+
+/* =====================================================
+   2.4 FONT-STYLE
+   ===================================================== */
+
+.font-style-example .sample {
+
+    font-style: italic;
+
+}
+
+
+/* =====================================================
+   2.5 FONT-WEIGHT
+   ===================================================== */
+
+.font-weight-example .sample {
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   2.6 COLOR
+   ===================================================== */
+
+.color-example .sample {
+
+    color: #1565c0;
+
+}
+
+
+/* =====================================================
+   2.7 TEXT-ALIGN
+   ===================================================== */
+
+.text-align-example .sample {
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+   2.8 TEXT-DECORATION
+   ===================================================== */
+
+.text-decoration-example .sample {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================================
+   2.9 TEXT-TRANSFORM
+   ===================================================== */
+
+.text-transform-example .sample {
+
+    text-transform: uppercase;
+
+}
+
+
+/* =====================================================
+   2.10 TEXT-INDENT
+   ===================================================== */
+
+.text-indent-example .sample {
+
+    text-indent: 60px;
+
+}
+
+
+/* =====================================================
+   2.11 LETTER-SPACING
+   ===================================================== */
+
+.letter-spacing-example .sample {
+
+    letter-spacing: 10px;
+
+}
+
+
+/* =====================================================
+   2.12 WORD-SPACING
+   ===================================================== */
+
+.word-spacing-example .sample {
+
+    word-spacing: 20px;
+
+}
+
+
+/* =====================================================
+   2.13 LINE-HEIGHT
+   ===================================================== */
+
+.line-height-example .sample {
+
+    line-height: 3;
+
+}
+
+
+/* =====================================================
+   2.14 TEXT-SHADOW
+   ===================================================== */
+
+.text-shadow-example .sample {
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #222222;
+
+    text-shadow:
+        4px 4px 5px #888888;
+
+}
