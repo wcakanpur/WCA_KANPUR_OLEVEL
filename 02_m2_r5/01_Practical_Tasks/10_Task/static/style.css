@@ -1,0 +1,433 @@
+/* =====================================================
+   GENERAL PAGE
+   ===================================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+
+    color: #222222;
+
+    font-family: Arial, sans-serif;
+    padding: 0 50px;
+}
+
+
+body > h1 {
+
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+
+/* =====================================================
+   COMMON BOX
+   ===================================================== */
+
+.border-box {
+
+    margin: 50px 50px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+}
+
+
+.border-box h2 {
+
+    margin-top: 0;
+
+    font-size: 26px;
+
+}
+
+
+.border-box p {
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+   3.1 BORDER
+   ===================================================== */
+
+/*
+   border is a shorthand property.
+
+   It specifies:
+   border-width
+   border-style
+   border-color
+*/
+
+.border-example {
+
+    border: 8px solid #1565c0;
+
+}
+
+
+/* =====================================================
+   3.2 BORDER-WIDTH
+   ===================================================== */
+
+.border-width-example {
+
+    border-style: solid;
+
+    border-color: #e65100;
+
+    border-width: 15px;
+
+}
+
+
+/* =====================================================
+   3.3 BORDER-STYLE
+   ===================================================== */
+
+.border-style-example {
+
+    border-width: 6px;
+
+    border-color: #2e7d32;
+
+    border-style: dashed;
+
+}
+
+
+/* =====================================================
+   3.4 BORDER-COLOR
+   ===================================================== */
+
+.border-color-example {
+
+    border-width: 7px;
+
+    border-style: solid;
+
+    border-color: #9c27b0;
+
+}
+
+
+/* =====================================================
+   3.5 BORDER-RADIUS
+   ===================================================== */
+
+.border-radius-example {
+
+    border: 5px solid #00838f;
+
+    border-radius: 30px;
+
+}
+
+
+/* =====================================================
+   3.6 OUTLINE
+   ===================================================== */
+
+/*
+   outline is a shorthand property.
+
+   It specifies:
+   outline-width
+   outline-style
+   outline-color
+*/
+
+.outline-example {
+
+    border: 3px solid #222222;
+
+    outline: 6px solid #e53935;
+
+}
+
+
+/* =====================================================
+   3.7 OUTLINE-WIDTH
+   ===================================================== */
+
+.outline-width-example {
+
+    border: 3px solid #222222;
+
+    outline-style: solid;
+
+    outline-color: #fb8c00;
+
+    outline-width: 10px;
+
+}
+
+
+/* =====================================================
+   3.8 OUTLINE-STYLE
+   ===================================================== */
+
+.outline-style-example {
+
+    border: 3px solid #222222;
+
+    outline-width: 6px;
+
+    outline-color: #7b1fa2;
+
+    outline-style: dashed;
+
+}
+
+
+/* =====================================================
+   3.9 OUTLINE-COLOR
+   ===================================================== */
+
+.outline-color-example {
+
+    border: 3px solid #222222;
+
+    outline-width: 7px;
+
+    outline-style: solid;
+
+    outline-color: #00897b;
+
+}
+
+
+/* =====================================================
+   3.10 OUTLINE-OFFSET
+   ===================================================== */
+
+/*
+   outline-offset creates space between the border
+   and the outline.
+*/
+
+.outline-offset-example {
+
+    border: 5px solid #1565c0;
+
+    outline-width: 6px;
+
+    outline-style: solid;
+
+    outline-color: #e53935;
+
+    outline-offset: 15px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+   SIDE-SPECIFIC BORDER
+   ===================================================== */
+
+.side-border-example {
+
+    border-top: 8px solid #e53935;
+
+    border-right: 8px solid #1e88e5;
+
+    border-bottom: 8px solid #43a047;
+
+    border-left: 8px solid #fb8c00;
+
+}
+
+
+/* =====================================================
+   BORDER-TOP
+   ===================================================== */
+
+.border-top-example {
+
+    border-top: 10px solid #e53935;
+
+}
+
+
+/* =====================================================
+   BORDER-RIGHT
+   ===================================================== */
+
+.border-right-example {
+
+    border-right: 10px solid #1e88e5;
+
+}
+
+
+/* =====================================================
+   BORDER-BOTTOM
+   ===================================================== */
+
+.border-bottom-example {
+
+    border-bottom: 10px solid #43a047;
+
+}
+
+
+/* =====================================================
+   BORDER-LEFT
+   ===================================================== */
+
+.border-left-example {
+
+    border-left: 10px solid #fb8c00;
+
+}
+
+
+/* =====================================================
+   CORNER-SPECIFIC BORDER
+   ===================================================== */
+
+.corner-border-example {
+
+    border-top: 8px solid #e53935;
+
+    border-right: 8px solid #1e88e5;
+
+    border-bottom: 8px solid #43a047;
+
+    border-left: 8px solid #fb8c00;
+
+}
+
+
+/*
+   Different border properties can be combined
+   to create different visual effects around corners.
+*/
+
+.border-top-right-example {
+
+    border-top: 10px solid #e53935;
+
+    border-right: 10px solid #1e88e5;
+
+}
+
+
+.border-top-left-example {
+
+    border-top: 10px solid #43a047;
+
+    border-left: 10px solid #fb8c00;
+
+}
+
+
+.border-bottom-right-example {
+
+    border-bottom: 10px solid #9c27b0;
+
+    border-right: 10px solid #00acc1;
+
+}
+
+
+.border-bottom-left-example {
+
+    border-bottom: 10px solid #f4511e;
+
+    border-left: 10px solid #3949ab;
+
+}
+
+
+/* =====================================================
+   CORNER-SPECIFIC BORDER RADIUS
+   ===================================================== */
+
+.radius-corners-example {
+
+    border: 5px solid #333333;
+
+    border-top-left-radius: 40px;
+
+    border-top-right-radius: 40px;
+
+    border-bottom-right-radius: 40px;
+
+    border-bottom-left-radius: 40px;
+
+}
+
+
+/* =====================================================
+   BORDER-TOP-RIGHT-RADIUS
+   ===================================================== */
+
+.top-right-radius-example {
+
+    border: 5px solid #1565c0;
+
+    border-top-right-radius: 60px;
+
+}
+
+
+/* =====================================================
+   BORDER-TOP-LEFT-RADIUS
+   ===================================================== */
+
+.top-left-radius-example {
+
+    border: 5px solid #2e7d32;
+
+    border-top-left-radius: 60px;
+
+}
+
+
+/* =====================================================
+   BORDER-BOTTOM-RIGHT-RADIUS
+   ===================================================== */
+
+.bottom-right-radius-example {
+
+    border: 5px solid #ef6c00;
+
+    border-bottom-right-radius: 60px;
+
+}
+
+
+/* =====================================================
+   BORDER-BOTTOM-LEFT-RADIUS
+   ===================================================== */
+
+.bottom-left-radius-example {
+
+    border: 5px solid #6a1b9a;
+
+    border-bottom-left-radius: 60px;
+
+}
