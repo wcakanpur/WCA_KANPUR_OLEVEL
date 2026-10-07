@@ -1,0 +1,622 @@
+
+/* =========================================================
+   CSS RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    background-color: #efe2c5;
+    background-image: url("linux-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #2f1f17;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+    padding: 30px 50px;
+}
+
+
+/* =========================================================
+   COMMON SECTION
+   ========================================================= */
+
+.section {
+    background-color: #f7f0df;
+
+    width: 90%;
+    height: auto;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #8d6547;
+    border-radius: 15px;
+
+    overflow: auto;
+
+    transition: background-color 0.4s;
+}
+
+
+/* SECTION HOVER */
+
+.section:hover {
+    background-color: #f2e4c4;
+}
+
+
+/* =========================================================
+   TOP / NAVIGATION
+   ========================================================= */
+
+#top {
+    background-color: #4e362d;
+
+    width: 90%;
+    padding: 25px;
+
+    margin: 0 auto 30px auto;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: background-color 0.4s;
+}
+
+#top:hover {
+    background-color: #413028;
+}
+
+#top p a{
+  margin: 0 20px;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    color: transparent;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+    word-spacing: 5px;
+
+    line-height: 1.4;
+
+    text-shadow: 2px 2px 4px #d5b77a;
+
+    margin: 20px 0;
+    padding: 10px;
+
+    transition: color 0.3s;
+
+    background-image: url('./images/gradient.gif');
+    background-position: top left;
+    background-size: cover;
+    background-clip: text;
+}
+
+h1:hover {
+    color: #5b392b;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+p {
+    color: #3d2b21;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+
+    text-align: justify;
+
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+
+    text-indent: 25px;
+
+    margin: 15px 0;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: #8a4d2d;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e0b4a8;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+img {
+    width: 500px;
+    height: 280px;
+
+    margin: 20px auto;
+    padding: 5px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: #8b5b3a;
+    border-radius: 15px;
+
+    background-color: #f4e7cf;
+
+    transition: all 0.4s;
+}
+
+img:hover {
+    border-color: #6e4229;
+    border-radius: 25px;
+    background-color: #663d22;
+}
+
+
+/* =========================================================
+   ORDERED LIST
+   ========================================================= */
+
+ol{
+    background-color: #f0e0b5;
+
+    width: 90%;
+
+    margin: 20px auto;
+    padding: 20px 40px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #8e5e32;
+    border-radius: 10px;
+
+    color: #39271e;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    transition: background-color 0.3s;
+}
+
+ol:hover {
+    background-color: #e9d3a6;
+}
+
+
+/* =========================================================
+   LIST ITEMS
+   ========================================================= */
+
+li {
+    margin: 8px;
+    padding: 5px;
+
+    color: #473126;
+
+    font-size: 16px;
+
+    transition: color 0.3s;
+}
+
+li:hover {
+    color: #e4c1ac;
+    background-color: #703d29;
+}
+
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+table {
+    width: 90%;
+
+    margin: 25px auto;
+
+    background-color: #f4ead7;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #8a5d3d;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    color: #2f2019;
+
+    text-align: center;
+
+    transition: background-color 0.4s;
+}
+
+table:hover {
+    background-color: #ebdcc0;
+}
+
+
+/* =========================================================
+   TABLE HEADINGS
+   ========================================================= */
+
+th {
+    background-color: #7b4d36;
+
+    color: #f7ebd5;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    padding: 15px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b78b5b;
+
+    transition: background-color 0.3s;
+}
+
+th:hover {
+    background-color: #6a4230;
+}
+
+
+/* =========================================================
+   TABLE DATA
+   ========================================================= */
+
+td {
+    background-color: #f1e4c9;
+
+    color: #402d23;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    padding: 12px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8c6544;
+
+    transition: background-color 0.3s;
+}
+
+td:hover {
+    background-color: #e7d4ac;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+form {
+    background-color: #f4ead7;
+
+    width: 90%;
+
+    margin: 25px auto;
+    padding: 25px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #8f6845;
+    border-radius: 15px;
+
+    overflow: auto;
+
+    transition: background-color 0.4s;
+}
+
+form:hover {
+    background-color: #eddcbb;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+    background-color: #f3e7d0;
+
+    margin: 15px 0;
+    padding: 15px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9d7b5d;
+    border-radius: 10px;
+
+    transition: background-color 0.3s;
+}
+
+.form-group:hover {
+    background-color: #ebd9b5;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+label {
+    color: #7d4930;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin: 10px;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+input {
+    background-color: #f9f1dc;
+
+    color: #2b1b15;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+
+    padding: 10px;
+    margin: 8px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #9e7752;
+    border-radius: 8px;
+
+    outline-width: 0px;
+    outline-style: solid;
+    outline-color: #aa6a3a;
+    outline-offset: 2px;
+
+    transition: background-color 0.3s;
+}
+
+input:hover {
+    background-color: #f1e1c0;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+select {
+    background-color: #f9f1dc;
+
+    color: #2b1b15;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+
+    padding: 10px;
+    margin: 8px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #9e7752;
+    border-radius: 8px;
+
+    transition: background-color 0.3s;
+}
+
+select:hover {
+    background-color: #f1e1c0;
+}
+
+
+/* =========================================================
+   OPTION
+   ========================================================= */
+
+option {
+    background-color: #f9f1dc;
+    color: #2b1b15;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   OPTGROUP
+   ========================================================= */
+
+optgroup {
+    background-color: #ebd7b0;
+
+    color: #703d29;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+textarea {
+    background-color: #f9f1dc;
+
+    color: #2b1b15;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+
+    padding: 12px;
+    margin: 8px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #9e7752;
+    border-radius: 8px;
+
+    outline-width: 0px;
+    outline-style: solid;
+    outline-color: #aa6a3a;
+    outline-offset: 2px;
+
+    overflow: auto;
+
+    transition: background-color 0.3s;
+}
+
+textarea:hover {
+    background-color: #f1e1c0;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+input[type="submit"] {
+    background-color: #7d4c33;
+
+    color: #f6ead9;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 12px 30px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c3a56d;
+    border-radius: 8px;
+
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #683f2d;
+}
+
+
+/* =========================================================
+   READONLY INPUT
+   ========================================================= */
+
+input[readonly] {
+    background-color: #dcc9a6;
+
+    color: #683d28;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   DISABLED INPUT
+   ========================================================= */
+
+input[disabled] {
+    background-color: #d2b88d;
+
+    color: #71553f;
+}
+
+
+/* =========================================================
+   FILE INPUT
+   ========================================================= */
+
+input[type="file"] {
+    background-color: #f9f1dc;
+
+    color: #402d23;
+
+    padding: 10px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #9e7752;
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   BACK TO TOP LINKS
+   ========================================================= */
+
+a[href="#top"] {
+    color: #733f29;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: color 0.3s;
+}
+
+a[href="#top"]:hover {
+    color: #4b2d22;
+
+    text-decoration: underline;
+}
