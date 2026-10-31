@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Sancreek&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+    /* 
+    
+    font-family: "Sancreek", serif;
+    
+    font-family: "New Rocker", system-ui;
+
+    font-family: "Science Gothic", sans-serif; 
+    
+    */
+
+section {
+    /* border: 1px solid red; */
+    height: 100dvh;
+    background-color: #ddd;
+}
+
+
+section h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 5rem;
+    font-family: "Sancreek", serif;
+          color: #ca0707;
+}
+
+.container{
+    /* background-color: yellow; */
+    height: 90%;
+    position: relative;
+}
+
+
+.box{
+        width: 50%;
+        height: 100%;
+        padding: 6rem 2rem;
+}
+
+
+.box1{
+    /* background-color: blueviolet; */
+
+}
+
+
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+}
+
+.box2{
+    /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+
+}
+
+.box2 h2{
+    font-size: 4rem;
+    text-transform: capitalize;
+      font-family: "New Rocker", system-ui;
+
+}
+
+.box2 p{
+    font-size: 1.6rem;
+    letter-spacing: 1px ;
+    word-break: .5px;
+    margin: 4rem 0;
+        font-family: "Science Gothic", sans-serif; 
+}
+
+.box2 a{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ca0707;
+        font-family: "Science Gothic", sans-serif;
+        transition: all .2s ease-in; 
+        border: 2px solid transparent;
+        padding: 1rem ;
+        border-radius: 2rem;
+
+
+        &:hover{
+            letter-spacing: 1rem;
+            border: 2px solid #ca0707;
+        }
+}
+
+
+
+@media all and (max-width:664px) {
+
+
+    .box{
+        width: 100%;
+        height: 50%;
+        padding: 2rem 0;
+    }
+
+
+    .box1{
+        padding: 2rem 0;
+
+    }
+    .container{
+        position: static;
+    }
+    
+    .box2{
+        position: static;
+        padding: 0 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section{
+    background-color: #cfd1d1;
+    height: 100dvh;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: #bd2121;
+    text-transform: capitalize;
+    font-family: "Sancreek", serif;
+}
+
+.container2{
+    position: relative;
+    height: 85%;
+    margin: 0 4rem;
+}
+
+
+.container2 .box{
+    margin: 2px 0;
+    width: 50%;
+    height: 100%;
+
+}
+
+.container2 .box2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8rem 2rem;
+
+}
+
+
+.container2 .box2 h2{
+    text-transform: capitalize;
+    font-size: 3.2rem;
+    margin: 1rem 0;
+    font-family: "New Rocker", system-ui;
+}
+
+
+.container2 .box2 p{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 1rem 0 1.4rem 0;
+    font-family: "Science Gothic", sans-serif;
+
+}
+
+.container2 .box2 a{
+
+    color: #b91e1e;
+    border: 1px solid transparent;
+    padding: .5rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Science Gothic", sans-serif;
+    transition: all .2s ease-in;
+
+    &:hover{
+        background-color: #cfd1d1;
+        border-color: #b91e1e;
+        letter-spacing: .3rem;
+    }
+
+}
+
+.container2 .box1{
+    padding: 8rem 0;
+}
+
+.container2 .box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: 40rem;
+    border-bottom-right-radius: 40rem;
+}
+
+
+@media all and (max-width:668px) {
+
+section h1{
+    font-size: 4.4rem;
+}
+
+.container2{
+    position: static;
+    margin: 0;
+}
+
+.container2 .box{
+    height: 50%;
+    width: 100%;
+}
+    
+.container2 .box1{
+    padding: 2rem 2rem 2rem 0;
+}
+
+.container2 .box2{
+    position: static;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.container2 .box2 h2{
+    font-size: 2.8rem;
+}
+
+.container2 .box2 p{
+    margin: 1rem 0 3rem 0;
+}
+
+} */
