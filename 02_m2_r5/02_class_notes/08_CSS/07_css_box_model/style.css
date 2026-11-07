@@ -1,0 +1,55 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ */
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+    width: 1150px;
+}
+
+.div1{
+    background-color: yellow;
+    padding: 10px;
+    border: 10px solid black;
+    margin: 10px;
+}
+
+.div2{
+    background-color: grey;
+    padding: 10px;
+    border: 10px solid black;
+    margin: 10px;
+}
+
+.div2 label{
+    background-color: red;
+    width: 100px;
+    margin: 5px;
+}
+
+.div2 a{
+    background-color: wheat;
+    width: 100px;
+}
+
+.div2 img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+label{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+
+} 
+
+

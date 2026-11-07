@@ -1,0 +1,48 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.div{
+
+    width: 150px;
+    height: 145px;
+
+
+}
+
+
+.div1{
+    background-color: yellow;
+    overflow: visible;
+}
+
+.div2{
+    margin: 300px 15px 10px 15px;
+    background-color: magenta;
+    overflow: hidden;
+}
+
+
+.div3{
+    background-color: green;
+    overflow: clip;
+    overflow-clip-margin: 8px;
+    margin: 10px 15px;
+}
+
+.div4{
+    background-color: red;
+    margin: 10px 15px;
+    overflow: scroll;
+}
+
+.div5{
+    background-color: maroon;
+    margin: 10px 15px;
+    overflow: auto;
+}

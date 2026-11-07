@@ -75,3 +75,10 @@ h1{
 .para8{
     text-indent:30px;
 }
+
+.para12{
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 4px #0004ff;
+
+}

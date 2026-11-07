@@ -1,0 +1,84 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    padding:  50px;
+    background-color: #222222;
+}
+
+
+.div{
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 6px;
+    width: 250px;
+}
+
+
+.div1{
+    background-color: blueviolet;
+}
+
+.div1:hover{
+    background-color: slategray;
+    color: whitesmoke;
+    width: 350px;
+}
+
+.div2{
+    background-color: mediumorchid;
+    transition: all .2s ease-in;
+
+    &:hover{
+        background-color: slateblue;
+        width: 300px;
+        color: white;
+    }
+}
+
+
+.div3:hover p{
+    color: white;
+    background-color: aquamarine;
+}
+
+.div3:hover h1{
+    letter-spacing: 5px;
+}
+
+.div4:hover~.div{
+    background-color: blueviolet;
+}
+.div5:hover+.div{
+    background-color: blueviolet;
+}
+
+
+.div8{
+    background-color: brown;
+    color: white;
+    /* transition-property: width,background-color,border; */
+
+    /* transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in; */
+    
+    transition: all .2s ease-in ;
+}
+
+
+.div8:hover{
+    width: 300px;
+    background-color: blue;
+    border: 8px solid white;
+}
+
+
