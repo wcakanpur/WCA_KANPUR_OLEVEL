@@ -1,0 +1,105 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    background-color: aqua;
+    width: 700px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+
+
+
+/* @media screen  and (max-width:300px){
+    .box{
+        width: 250px;
+        background-color: red;
+    }
+} */
+
+
+/* @media print{
+
+    .box{
+        background-color: peru;
+        color: black;
+    }
+} */
+
+
+
+/* @media speech {
+    .box{
+        background-color: peru;
+        color: black;
+    }
+} */
+
+
+
+/* @media all  and (max-width:300px){
+    .box{
+        width: 250px;
+        background-color: rgb(3, 255, 137);
+    }
+} */
+
+
+/* @media (min-width:600px){
+    .box{
+        width: 300px;
+        background-color: rgb(3, 255, 137);
+    }
+}  */
+
+
+/* @media (min-width:600px) and (max-width:800px){
+    .box{
+        width: 300px;
+        background-color: #dd7805;
+    }
+}  */
+
+/* @media ( width >= 600px){
+    .box{
+        width: 300px;
+        background-color: #dd7805;
+    }
+}  */
+/* @media ( width <= 600px){
+    .box{
+        width: 300px;
+        background-color: #dd7805;
+    }
+}  */
+
+/* @media ( 600px <= width <= 800px){
+    .box{
+        width: 300px;
+        background-color: #dd7805;
+    }
+}  */
+
+
+
+@media (orientation: landscape){
+    .box{
+        background-color: yellow;
+    }
+}
+
+@media (orientation: portrait){
+    .box{
+        background-color: #e100ff;
+    }
+}

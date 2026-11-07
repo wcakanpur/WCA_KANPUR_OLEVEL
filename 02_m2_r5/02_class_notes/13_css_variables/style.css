@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --background-color:#b6a50e;
+    --font-color:#0eb64e;
+
+    --margin:2rem;
+}
+
+.div{
+    border: 1px solid red;
+    font-size: 4rem;
+    background-color: #b6a50e;
+}
+
+.div p{
+    border: 1px solid green;
+    font-size: 1.6rem;
+    margin: var(--margin);
+}
+
+p{
+border: 1px solid var(--);
+margin: var(--margin);
+
+--background-color:red;
+
+background-color: var(--background-color);
+
+color: var(--font-color,red);
+}
+
+/* --variableName:value;
+
+
+var(--variableName) */
+
+

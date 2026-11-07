@@ -1,0 +1,56 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #222;
+    color: #ddd;
+}
+
+h1{
+    background-color: #292823;
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.cntnr{
+    border: 1px solid #ddd;
+    margin: 3.2rem 2rem;
+    padding: 1.4rem;
+}
+
+.box{
+    border: 1px solid wheat;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 1.4rem 0;
+}
+
+.cntnr1 .box{
+    display: inline;
+    margin: 20px;
+}
+
+
+
+.cntnr2 .box{
+
+    display: inline-block;
+
+}
+
+.cntnr3 .box3{
+
+    display: none;
+
+}
+
