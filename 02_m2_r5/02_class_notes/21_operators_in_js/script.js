@@ -78,3 +78,6 @@ console.log(a5<a6 && a6>a5)
 console.log(!a5==a6)
 
 // 5. bitwise operator : and(&),or(|),not(~),xor(^),left shift(<<),right shift(>>)
+
+
+
