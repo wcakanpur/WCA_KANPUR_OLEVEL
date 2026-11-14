@@ -123,18 +123,64 @@
 // }
 
 
+// let n1 = prompt("number 1 : ")
+// let n2 = prompt("number 2 : ")
+// let n3 = prompt("number 3 : ")
+// if ((n1 > n2) && (n1 > n3)){
+//     console.log(`greater : ${n1}`)
+// }
+// else if ((n2 > n1) && (n2 > n3)){
+//     console.log(`greater : ${n2}`)
+// }
+// else if ((n3 > n1) && (n3 > n2)){
+//     console.log(`greater : ${n3}`)
+// }else{
+//     console.log("all are equal")
+// }
 
-let n1 = prompt("number 1 : ")
-let n2 = prompt("number 2 : ")
-let n3 = prompt("number 3 : ")
-if ((n1 > n2) && (n1 > n3)){
-    console.log(`greater : ${n1}`)
+
+//  switch case
+
+// syntax : 
+
+// switch (varible/condition/) {
+//     case value1:
+//         console.log("value1");
+//         break;
+//     case value2:
+//         console.log("value1");
+//         break;
+
+//     default:
+//         console.log("default message ")
+// }
+
+let user1 = 30
+
+switch (user1){
+
+    case 1:
+        console.log("mon")
+        break;
+    case 2:
+        console.log("tue")
+        break;
+    case 3:
+        console.log("wed")
+        break;
+    default:
+        console.log("default message")       
 }
-else if ((n2 > n1) && (n2 > n3)){
-    console.log(`greater : ${n2}`)
-}
-else if ((n3 > n1) && (n3 > n2)){
-    console.log(`greater : ${n3}`)
-}else{
-    console.log("all are equal")
-}
+
+let user3 = "abc"
+
+switch (user3%2){
+    case 0:
+        console.log(`${user3} is even`);
+        break;
+    case 1:
+        console.log(`${user3} is odd`);
+        break;
+    default:
+        console.log("invalid")
+} 
