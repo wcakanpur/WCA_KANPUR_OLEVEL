@@ -71,38 +71,88 @@
 // scoping 
 
 
-// function fun4(){
 
-//     let a = 100
-//     const b = 200
-//     var c = 300
 
-//     console.log(a,b,c)
+
+
+
+// {} -> scope 
+
+
+
+
+
+
+// function fun1(){
+// let a = 10
+// const b = 20
+// var c = 30
+
 // }
 
-// fun4()
-
-
+// fun1()
 // console.log(c)
+
+
+// nested fun
+
+
+// function one(){
+//     let a = "function one varible"
+
+//     function two(){
+//         let b = "function two variable"
+
+//     }
+
+//         console.log(a)
+//         // console.log(b) error
+//     two()
+// }
+
+// one()
+
+
+
+
+// arrow function
+
+let fun1 = function (a,b=9){
+    console.log("fun1")
+    console.log(a*10,b*10)
+}
+
+fun1(2)
+
+let fun2 = (a,b) => {
+
+    console.log("fun2")
+    console.log(a*10,b*10)
+}
+
+fun2(3,5)
+
+
+
 
 
 // questions 
 
 
-let greater = function (a,b){
-    if (a>b){
-        return a
-    }
-    else {
-        return b
-    }
-}
+// let greater = function (a,b){
+//     if (a>b){
+//         return a
+//     }
+//     else {
+//         return b
+//     }
+// }
 
-let x = Number(prompt("number 1 : "))
-let y = Number(prompt("number 2 : "))
-let res = greater(x,y)
-console.log(res, typeof res)
-alert(`between ${x} and ${y} greater is ${res}`)
+// let x = Number(prompt("number 1 : "))
+// let y = Number(prompt("number 2 : "))
+// let res = greater(x,y)
+// console.log(res, typeof res)
+// alert(`between ${x} and ${y} greater is ${res}`)
 
 
 
